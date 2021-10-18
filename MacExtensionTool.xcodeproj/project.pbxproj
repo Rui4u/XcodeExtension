@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55267BE72693FB0E00610292 /* LazyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55267BE62693FB0E00610292 /* LazyCodeView.swift */; };
+		55267BE92694025D00610292 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55267BE82694025D00610292 /* View+Extension.swift */; };
+		556850052693F0F60020FEE4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F2029E269329FF006062C7 /* UserDefaultsManager.swift */; };
+		556850072693F1160020FEE4 /* LazyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E67F0A268F119000581566 /* LazyModel.swift */; };
+		5568500A2693F1640020FEE4 /* LazyCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556850092693F1640020FEE4 /* LazyCommand.swift */; };
+		55A3CC2526957E6200EDC1C6 /* LazyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A3CC2426957E6200EDC1C6 /* LazyContentView.swift */; };
+		55AD0C2A260326C6008F7DF7 /* MacExtensionToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C29260326C6008F7DF7 /* MacExtensionToolApp.swift */; };
+		55AD0C2C260326C6008F7DF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C2B260326C6008F7DF7 /* ContentView.swift */; };
+		55AD0C2E260326C6008F7DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55AD0C2D260326C6008F7DF7 /* Assets.xcassets */; };
+		55AD0C31260326C6008F7DF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55AD0C30260326C6008F7DF7 /* Preview Assets.xcassets */; };
+		55AD0C33260326C6008F7DF7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C32260326C6008F7DF7 /* Persistence.swift */; };
+		55AD0C36260326C6008F7DF7 /* MacExtensionTool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C34260326C6008F7DF7 /* MacExtensionTool.xcdatamodeld */; };
+		55AD0C42260326C6008F7DF7 /* MacExtensionToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C41260326C6008F7DF7 /* MacExtensionToolTests.swift */; };
+		55AD0C4D260326C6008F7DF7 /* MacExtensionToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C4C260326C6008F7DF7 /* MacExtensionToolUITests.swift */; };
+		55AD0C64260326DD008F7DF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AD0C63260326DD008F7DF7 /* Cocoa.framework */; };
+		55AD0C69260326DD008F7DF7 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C68260326DD008F7DF7 /* SourceEditorExtension.swift */; };
+		55AD0C6B260326DD008F7DF7 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C6A260326DD008F7DF7 /* SourceEditorCommand.swift */; };
+		55AD0C70260326DD008F7DF7 /* XcodeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55AD0C61260326DD008F7DF7 /* XcodeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55AD0C8126032771008F7DF7 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AD0C65260326DD008F7DF7 /* XcodeKit.framework */; };
+		55AD0C8226032771008F7DF7 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55AD0C65260326DD008F7DF7 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55E03DF326032D8100681B0F /* LazyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C7926032716008F7DF7 /* LazyTools.swift */; };
+		55E03DF426032D8100681B0F /* PropertyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD0C7A26032716008F7DF7 /* PropertyTools.swift */; };
+		55E67F0B268F119000581566 /* LazyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E67F0A268F119000581566 /* LazyModel.swift */; };
+		55F2029F269329FF006062C7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F2029E269329FF006062C7 /* UserDefaultsManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55AD0C3E260326C6008F7DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55AD0C1E260326C6008F7DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AD0C25260326C6008F7DF7;
+			remoteInfo = MacExtensionTool;
+		};
+		55AD0C49260326C6008F7DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55AD0C1E260326C6008F7DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AD0C25260326C6008F7DF7;
+			remoteInfo = MacExtensionTool;
+		};
+		55AD0C6E260326DD008F7DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55AD0C1E260326C6008F7DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AD0C60260326DD008F7DF7;
+			remoteInfo = XcodeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55AD0C74260326DD008F7DF7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55AD0C70260326DD008F7DF7 /* XcodeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C8326032771008F7DF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55AD0C8226032771008F7DF7 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55267BE62693FB0E00610292 /* LazyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyCodeView.swift; sourceTree = "<group>"; };
+		55267BE82694025D00610292 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		556850092693F1640020FEE4 /* LazyCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyCommand.swift; sourceTree = "<group>"; };
+		55A3CC2426957E6200EDC1C6 /* LazyContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyContentView.swift; sourceTree = "<group>"; };
+		55AD0C26260326C6008F7DF7 /* MacExtensionTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacExtensionTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AD0C29260326C6008F7DF7 /* MacExtensionToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacExtensionToolApp.swift; sourceTree = "<group>"; };
+		55AD0C2B260326C6008F7DF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55AD0C2D260326C6008F7DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55AD0C30260326C6008F7DF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55AD0C32260326C6008F7DF7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		55AD0C35260326C6008F7DF7 /* MacExtensionTool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MacExtensionTool.xcdatamodel; sourceTree = "<group>"; };
+		55AD0C37260326C6008F7DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AD0C38260326C6008F7DF7 /* MacExtensionTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacExtensionTool.entitlements; sourceTree = "<group>"; };
+		55AD0C3D260326C6008F7DF7 /* MacExtensionToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacExtensionToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AD0C41260326C6008F7DF7 /* MacExtensionToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacExtensionToolTests.swift; sourceTree = "<group>"; };
+		55AD0C43260326C6008F7DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AD0C48260326C6008F7DF7 /* MacExtensionToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacExtensionToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AD0C4C260326C6008F7DF7 /* MacExtensionToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacExtensionToolUITests.swift; sourceTree = "<group>"; };
+		55AD0C4E260326C6008F7DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AD0C61260326DD008F7DF7 /* XcodeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AD0C63260326DD008F7DF7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		55AD0C65260326DD008F7DF7 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		55AD0C68260326DD008F7DF7 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		55AD0C6A260326DD008F7DF7 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		55AD0C6C260326DD008F7DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AD0C6D260326DD008F7DF7 /* XcodeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeExtension.entitlements; sourceTree = "<group>"; };
+		55AD0C7926032716008F7DF7 /* LazyTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyTools.swift; sourceTree = "<group>"; };
+		55AD0C7A26032716008F7DF7 /* PropertyTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTools.swift; sourceTree = "<group>"; };
+		55E67F0A268F119000581566 /* LazyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyModel.swift; sourceTree = "<group>"; };
+		55F2029E269329FF006062C7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55AD0C23260326C6008F7DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C3A260326C6008F7DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C45260326C6008F7DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C5E260326DD008F7DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AD0C64260326DD008F7DF7 /* Cocoa.framework in Frameworks */,
+				55AD0C8126032771008F7DF7 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556850022693EEFA0020FEE4 /* Lazy */ = {
+			isa = PBXGroup;
+			children = (
+				55A3CC552696CF6400EDC1C6 /* Location */,
+				55A3CC542696CF4D00EDC1C6 /* Model */,
+				55A3CC2426957E6200EDC1C6 /* LazyContentView.swift */,
+				55267BE62693FB0E00610292 /* LazyCodeView.swift */,
+			);
+			path = Lazy;
+			sourceTree = "<group>";
+		};
+		556850082693F1320020FEE4 /* lazy */ = {
+			isa = PBXGroup;
+			children = (
+				55AD0C7926032716008F7DF7 /* LazyTools.swift */,
+				55AD0C7A26032716008F7DF7 /* PropertyTools.swift */,
+				556850092693F1640020FEE4 /* LazyCommand.swift */,
+			);
+			path = lazy;
+			sourceTree = "<group>";
+		};
+		55A3CC532696CF3C00EDC1C6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				55267BE82694025D00610292 /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		55A3CC542696CF4D00EDC1C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55E67F0A268F119000581566 /* LazyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55A3CC552696CF6400EDC1C6 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				55F2029E269329FF006062C7 /* UserDefaultsManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		55AD0C1D260326C6008F7DF7 = {
+			isa = PBXGroup;
+			children = (
+				55AD0C28260326C6008F7DF7 /* MacExtensionTool */,
+				55AD0C40260326C6008F7DF7 /* MacExtensionToolTests */,
+				55AD0C4B260326C6008F7DF7 /* MacExtensionToolUITests */,
+				55AD0C67260326DD008F7DF7 /* XcodeExtension */,
+				55AD0C62260326DD008F7DF7 /* Frameworks */,
+				55AD0C27260326C6008F7DF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55AD0C27260326C6008F7DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55AD0C26260326C6008F7DF7 /* MacExtensionTool.app */,
+				55AD0C3D260326C6008F7DF7 /* MacExtensionToolTests.xctest */,
+				55AD0C48260326C6008F7DF7 /* MacExtensionToolUITests.xctest */,
+				55AD0C61260326DD008F7DF7 /* XcodeExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55AD0C28260326C6008F7DF7 /* MacExtensionTool */ = {
+			isa = PBXGroup;
+			children = (
+				55A3CC532696CF3C00EDC1C6 /* Extension */,
+				556850022693EEFA0020FEE4 /* Lazy */,
+				55AD0C29260326C6008F7DF7 /* MacExtensionToolApp.swift */,
+				55AD0C2B260326C6008F7DF7 /* ContentView.swift */,
+				55AD0C2D260326C6008F7DF7 /* Assets.xcassets */,
+				55AD0C32260326C6008F7DF7 /* Persistence.swift */,
+				55AD0C37260326C6008F7DF7 /* Info.plist */,
+				55AD0C38260326C6008F7DF7 /* MacExtensionTool.entitlements */,
+				55AD0C34260326C6008F7DF7 /* MacExtensionTool.xcdatamodeld */,
+				55AD0C2F260326C6008F7DF7 /* Preview Content */,
+			);
+			path = MacExtensionTool;
+			sourceTree = "<group>";
+		};
+		55AD0C2F260326C6008F7DF7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				55AD0C30260326C6008F7DF7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55AD0C40260326C6008F7DF7 /* MacExtensionToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				55AD0C41260326C6008F7DF7 /* MacExtensionToolTests.swift */,
+				55AD0C43260326C6008F7DF7 /* Info.plist */,
+			);
+			path = MacExtensionToolTests;
+			sourceTree = "<group>";
+		};
+		55AD0C4B260326C6008F7DF7 /* MacExtensionToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55AD0C4C260326C6008F7DF7 /* MacExtensionToolUITests.swift */,
+				55AD0C4E260326C6008F7DF7 /* Info.plist */,
+			);
+			path = MacExtensionToolUITests;
+			sourceTree = "<group>";
+		};
+		55AD0C62260326DD008F7DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55AD0C63260326DD008F7DF7 /* Cocoa.framework */,
+				55AD0C65260326DD008F7DF7 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55AD0C67260326DD008F7DF7 /* XcodeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				556850082693F1320020FEE4 /* lazy */,
+				55AD0C68260326DD008F7DF7 /* SourceEditorExtension.swift */,
+				55AD0C6A260326DD008F7DF7 /* SourceEditorCommand.swift */,
+				55AD0C6C260326DD008F7DF7 /* Info.plist */,
+				55AD0C6D260326DD008F7DF7 /* XcodeExtension.entitlements */,
+			);
+			path = XcodeExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55AD0C25260326C6008F7DF7 /* MacExtensionTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AD0C51260326C6008F7DF7 /* Build configuration list for PBXNativeTarget "MacExtensionTool" */;
+			buildPhases = (
+				55AD0C22260326C6008F7DF7 /* Sources */,
+				55AD0C23260326C6008F7DF7 /* Frameworks */,
+				55AD0C24260326C6008F7DF7 /* Resources */,
+				55AD0C74260326DD008F7DF7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AD0C6F260326DD008F7DF7 /* PBXTargetDependency */,
+			);
+			name = MacExtensionTool;
+			productName = MacExtensionTool;
+			productReference = 55AD0C26260326C6008F7DF7 /* MacExtensionTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55AD0C3C260326C6008F7DF7 /* MacExtensionToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AD0C54260326C6008F7DF7 /* Build configuration list for PBXNativeTarget "MacExtensionToolTests" */;
+			buildPhases = (
+				55AD0C39260326C6008F7DF7 /* Sources */,
+				55AD0C3A260326C6008F7DF7 /* Frameworks */,
+				55AD0C3B260326C6008F7DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AD0C3F260326C6008F7DF7 /* PBXTargetDependency */,
+			);
+			name = MacExtensionToolTests;
+			productName = MacExtensionToolTests;
+			productReference = 55AD0C3D260326C6008F7DF7 /* MacExtensionToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55AD0C47260326C6008F7DF7 /* MacExtensionToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AD0C57260326C6008F7DF7 /* Build configuration list for PBXNativeTarget "MacExtensionToolUITests" */;
+			buildPhases = (
+				55AD0C44260326C6008F7DF7 /* Sources */,
+				55AD0C45260326C6008F7DF7 /* Frameworks */,
+				55AD0C46260326C6008F7DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AD0C4A260326C6008F7DF7 /* PBXTargetDependency */,
+			);
+			name = MacExtensionToolUITests;
+			productName = MacExtensionToolUITests;
+			productReference = 55AD0C48260326C6008F7DF7 /* MacExtensionToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		55AD0C60260326DD008F7DF7 /* XcodeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AD0C71260326DD008F7DF7 /* Build configuration list for PBXNativeTarget "XcodeExtension" */;
+			buildPhases = (
+				55AD0C5D260326DD008F7DF7 /* Sources */,
+				55AD0C5E260326DD008F7DF7 /* Frameworks */,
+				55AD0C5F260326DD008F7DF7 /* Resources */,
+				55AD0C8326032771008F7DF7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeExtension;
+			productName = XcodeExtension;
+			productReference = 55AD0C61260326DD008F7DF7 /* XcodeExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55AD0C1E260326C6008F7DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					55AD0C25260326C6008F7DF7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					55AD0C3C260326C6008F7DF7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 55AD0C25260326C6008F7DF7;
+					};
+					55AD0C47260326C6008F7DF7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 55AD0C25260326C6008F7DF7;
+					};
+					55AD0C60260326DD008F7DF7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 55AD0C21260326C6008F7DF7 /* Build configuration list for PBXProject "MacExtensionTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55AD0C1D260326C6008F7DF7;
+			productRefGroup = 55AD0C27260326C6008F7DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55AD0C25260326C6008F7DF7 /* MacExtensionTool */,
+				55AD0C3C260326C6008F7DF7 /* MacExtensionToolTests */,
+				55AD0C47260326C6008F7DF7 /* MacExtensionToolUITests */,
+				55AD0C60260326DD008F7DF7 /* XcodeExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55AD0C24260326C6008F7DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AD0C31260326C6008F7DF7 /* Preview Assets.xcassets in Resources */,
+				55AD0C2E260326C6008F7DF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C3B260326C6008F7DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C46260326C6008F7DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C5F260326DD008F7DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55AD0C22260326C6008F7DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A3CC2526957E6200EDC1C6 /* LazyContentView.swift in Sources */,
+				55AD0C33260326C6008F7DF7 /* Persistence.swift in Sources */,
+				55AD0C36260326C6008F7DF7 /* MacExtensionTool.xcdatamodeld in Sources */,
+				55F2029F269329FF006062C7 /* UserDefaultsManager.swift in Sources */,
+				55267BE72693FB0E00610292 /* LazyCodeView.swift in Sources */,
+				55AD0C2C260326C6008F7DF7 /* ContentView.swift in Sources */,
+				55E67F0B268F119000581566 /* LazyModel.swift in Sources */,
+				55AD0C2A260326C6008F7DF7 /* MacExtensionToolApp.swift in Sources */,
+				55267BE92694025D00610292 /* View+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C39260326C6008F7DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AD0C42260326C6008F7DF7 /* MacExtensionToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C44260326C6008F7DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AD0C4D260326C6008F7DF7 /* MacExtensionToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AD0C5D260326DD008F7DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E03DF426032D8100681B0F /* PropertyTools.swift in Sources */,
+				556850072693F1160020FEE4 /* LazyModel.swift in Sources */,
+				556850052693F0F60020FEE4 /* UserDefaultsManager.swift in Sources */,
+				5568500A2693F1640020FEE4 /* LazyCommand.swift in Sources */,
+				55E03DF326032D8100681B0F /* LazyTools.swift in Sources */,
+				55AD0C69260326DD008F7DF7 /* SourceEditorExtension.swift in Sources */,
+				55AD0C6B260326DD008F7DF7 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55AD0C3F260326C6008F7DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AD0C25260326C6008F7DF7 /* MacExtensionTool */;
+			targetProxy = 55AD0C3E260326C6008F7DF7 /* PBXContainerItemProxy */;
+		};
+		55AD0C4A260326C6008F7DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AD0C25260326C6008F7DF7 /* MacExtensionTool */;
+			targetProxy = 55AD0C49260326C6008F7DF7 /* PBXContainerItemProxy */;
+		};
+		55AD0C6F260326DD008F7DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AD0C60260326DD008F7DF7 /* XcodeExtension */;
+			targetProxy = 55AD0C6E260326DD008F7DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55AD0C4F260326C6008F7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55AD0C50260326C6008F7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		55AD0C52260326C6008F7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacExtensionTool/MacExtensionTool.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacExtensionTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacExtensionTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55AD0C53260326C6008F7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacExtensionTool/MacExtensionTool.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacExtensionTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacExtensionTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		55AD0C55260326C6008F7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				INFOPLIST_FILE = MacExtensionToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacExtensionTool.app/Contents/MacOS/MacExtensionTool";
+			};
+			name = Debug;
+		};
+		55AD0C56260326C6008F7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				INFOPLIST_FILE = MacExtensionToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacExtensionTool.app/Contents/MacOS/MacExtensionTool";
+			};
+			name = Release;
+		};
+		55AD0C58260326C6008F7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				INFOPLIST_FILE = MacExtensionToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacExtensionTool;
+			};
+			name = Debug;
+		};
+		55AD0C59260326C6008F7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				INFOPLIST_FILE = MacExtensionToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacExtensionTool;
+			};
+			name = Release;
+		};
+		55AD0C72260326DD008F7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeExtension/XcodeExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionTool.XcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55AD0C73260326DD008F7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeExtension/XcodeExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_TEAM = 3CGKDFZPAL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rui4u.MacExtensionTool.XcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55AD0C21260326C6008F7DF7 /* Build configuration list for PBXProject "MacExtensionTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AD0C4F260326C6008F7DF7 /* Debug */,
+				55AD0C50260326C6008F7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AD0C51260326C6008F7DF7 /* Build configuration list for PBXNativeTarget "MacExtensionTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AD0C52260326C6008F7DF7 /* Debug */,
+				55AD0C53260326C6008F7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AD0C54260326C6008F7DF7 /* Build configuration list for PBXNativeTarget "MacExtensionToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AD0C55260326C6008F7DF7 /* Debug */,
+				55AD0C56260326C6008F7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AD0C57260326C6008F7DF7 /* Build configuration list for PBXNativeTarget "MacExtensionToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AD0C58260326C6008F7DF7 /* Debug */,
+				55AD0C59260326C6008F7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AD0C71260326DD008F7DF7 /* Build configuration list for PBXNativeTarget "XcodeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AD0C72260326DD008F7DF7 /* Debug */,
+				55AD0C73260326DD008F7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55AD0C34260326C6008F7DF7 /* MacExtensionTool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55AD0C35260326C6008F7DF7 /* MacExtensionTool.xcdatamodel */,
+			);
+			currentVersion = 55AD0C35260326C6008F7DF7 /* MacExtensionTool.xcdatamodel */;
+			path = MacExtensionTool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 55AD0C1E260326C6008F7DF7 /* Project object */;
+}
